@@ -1,0 +1,15 @@
+/*Basic page styling*/
+html {
+    background: #222;
+    color: white;
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.box {
+    width: 400px;
+    display: inline-block;
+    padding: 0 15px;
+}
