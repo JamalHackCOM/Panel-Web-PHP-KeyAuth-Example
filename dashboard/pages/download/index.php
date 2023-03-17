@@ -376,7 +376,7 @@ $appcooldown = $json->cooldown;
               </span> <span class="menu-title">Download</span> </a>
 										</li>
 										<li class="nav-item menu-items">
-											<a class="nav-link" href="https://discord.com/users/523754702241005583" target="_blank"> <span class="menu-icon">
+											<a class="nav-link" href="" target="_blank"> <span class="menu-icon">
                 <i class="mdi mdi-account-circle"></i>
               </span> <span class="menu-title">Support</span> </a>
 										</li>
