@@ -157,7 +157,7 @@ $token = $json->token;
               </span> <span class="menu-title">Download</span> </a>
 										</li>
 										<li class="nav-item menu-items">
-											<a class="nav-link" href="https://discord.com/users/523754702241005583" target="_blank"> <span class="menu-icon">
+											<a class="nav-link" href="" target="_blank"> <span class="menu-icon">
                 <i class="mdi mdi-account-circle"></i>
               </span> <span class="menu-title">Support</span> </a>
 										</li>
@@ -763,7 +763,7 @@ $token = $json->token;
 														<hr>
 														<div class="form-group">
 															<input type="hidden" id="reset" name="reset" value="ok"> </div>
-														<p class="spacer text-center">Do you have a problem?<a href="https://discord.com/users/523754702241005583"> Contact Support</a>.</p>
+														<p class="spacer text-center">Do you have a problem?<a href=""> Contact Support</a>.</p>
 												</div>
 												<?php
 							$un = $_SESSION['un'];
@@ -880,7 +880,7 @@ $token = $json->token;
 												<div class="d-flex py-4">
 													<div class="preview-list w-100">
 														<div class="preview-item p-0">
-															<div class="preview-thumbnail"> <img src="https://cdn.discordapp.com/avatars/523754702241005583/a_bc6236555846936c254c403bb6ba242f.gif?size=4096" class="rounded-circle" alt=""> </div>
+															<div class="preview-thumbnail"> <img src="" class="rounded-circle" alt=""> </div>
 															<div class="preview-item-content d-flex flex-grow">
 																<div class="flex-grow">
 																	<div class="d-flex d-md-block d-xl-flex justify-content-between">
@@ -1180,7 +1180,7 @@ $token = $json->token;
 												</div>
 												<script>
 												var xhReq = new XMLHttpRequest();
-												xhReq.open("GET", "https://discord.com/api/guilds/789190038495559740/widget.json", false);
+												xhReq.open("GET", "", false);
 												xhReq.send(null);
 												var discordjson = JSON.parse(xhReq.responseText);
 												if(discordjson != null) {
