@@ -524,16 +524,16 @@ $appcooldown = $json->cooldown;
 														<div class="">
 															<div class="">
 																<label for="example-tel-input" class="col-9 col-form-label">Emulador Bluestacks 4 <span class="text-info">(Recomendado UI_MrGarabato) </span><span class="text-success"><i aria-hidden="true" class="fas fa-badge-check fa-lg"></i></label></span>
-																	<div class="col-10"> <a href="https://bit.ly/3AChWtk" target="_blank" class="btn btn-block btn-success btn-rad btn-lg"><i class="fas fa-download fa-sm text-white-50"></i> Download </a> </div>
+																	<div class="col-10"> <a href="" target="_blank" class="btn btn-block btn-success btn-rad btn-lg"><i class="fas fa-download fa-sm text-white-50"></i> Download </a> </div>
 																	<br>
 																	<label for="example-tel-input" class="col-9 col-form-label">Emulador Msi App Player <span class="text-info">(Recomendado UI_MrGarabato) </span><span class="text-success"><i aria-hidden="true" class="fas fa-badge-check fa-lg"></i></label></span>
-																		<div class="col-10"> <a href="https://bit.ly/3zHGQHO" target="_blank" class="btn btn-block btn-success btn-rad btn-lg"><i class="fas fa-download fa-sm text-white-50"></i> Download </a> </div>
+																		<div class="col-10"> <a href="" target="_blank" class="btn btn-block btn-success btn-rad btn-lg"><i class="fas fa-download fa-sm text-white-50"></i> Download </a> </div>
 																		<br>
 																		<label for="example-tel-input" class="col-9 col-form-label">Reset IMEI <span class="text-info">(Bluestacks 4,5 y Msi) </span><span class="text-success"><i aria-hidden="true" class="fas fa-badge-check fa-lg"></i></label></span>
-																			<div class="col-10"> <a href="https://cdn.discordapp.com/attachments/1002033660947603639/1011744194861224037/Reset_IMEI_Bluestacks_4-5_y_Msi.rar" target="_blank" class="btn btn-block btn-success btn-rad btn-lg"><i class="fas fa-download fa-sm text-white-50"></i> Download </a> </div>
+																			<div class="col-10"> <a href="" target="_blank" class="btn btn-block btn-success btn-rad btn-lg"><i class="fas fa-download fa-sm text-white-50"></i> Download </a> </div>
 																			<br>
 																			<label for="example-tel-input" class="col-8 col-form-label">Version
-																				<?php echo $appVersion; ?> <span class="text-info">(Version Actual) </span> <span class="text-success"><i aria-hidden="true" class="fas fa-badge-check fa-lg"></i></label></span>
+																				<?php echo $appVersion; ?> <span class="text-info">(Current Version) </span> <span class="text-success"><i aria-hidden="true" class="fas fa-badge-check fa-lg"></i></label></span>
 																					<br>
 																					<div class="col-10" style="display:none;" id="buttons">
 																						<?php
