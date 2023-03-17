@@ -1230,7 +1230,7 @@ $token = $json->token;
 										<br>
 										<br>
 										<br>
-										<div class="d-sm-flex justify-content-center justify-content-sm-between"> <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © MrGarabato  | Created with ❤ by <a href="https://discord.com/users/959935214895890532"target="_blank"><span>Zarfala</span></a>
+										<div class="d-sm-flex justify-content-center justify-content-sm-between"> <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © MrGarabato  | Created with ❤ by <a href=""target="_blank"><span>ZetroCode</span></a>
 											</span>
 										</div>
 									</footer>
