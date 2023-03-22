@@ -2,58 +2,21 @@
 
 require 'KeyAuth.php';
 
-// Redirect to dashboard if user is already logged in
 if (isset($_SESSION['user_data'])) 
 {
-  header("Location: dashboard/");
-  exit();
+	  header("Location: dashboard/");
+    exit();
 }
 
 $name = ""; // Application name
 $ownerid = ""; // Application ownerID
 $KeyAuthApp = new KeyAuth\api($name, $ownerid);
 
-// Initialize the session if it hasn't been initialized yet
 if (!isset($_SESSION['sessionid'])) 
 {
-  $KeyAuthApp->init();
+  	$KeyAuthApp->init();
 }
-
-// Uncomment if you want to print the current session id for manual requests using postman
-// echo $_SESSION['sessionid'];
-
-if (isset($_POST['login']))
-{
-    if($KeyAuthApp->login($_POST['keyauthusername'],$_POST['keyauthpassword']))
-    {
-        header("Location: ./dashboard/");
-        exit();
-    }
-    else
-    {
-        echo "<script>
-            const notyf = new Notyf({
-                duration: 4000,
-                position: {
-                    x: 'center',
-                    y: 'top',
-                },
-                types: [
-                    {
-                        type: 'error',
-                        background: '#ff4d4d',
-                        icon: {
-                            className: 'fas fa-exclamation-triangle',
-                            tagName: 'span',
-                            color: '#fff'
-                          }
-                    }
-                ]
-            });
-            notyf.error('Invalid username or password');
-        </script>";
-    }
-}
+//echo $_SESSION['sessionid']; //Will print current sessionid, that you can make request manually with like postman
 ?>
 
 <!DOCTYPE html>
@@ -123,5 +86,30 @@ if (isset($_POST['login']))
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    
+    <?php if (isset($_POST["login"])) {
+        if (
+            $KeyAuthApp->login(
+                $_POST["keyauthusername"],
+                $_POST["keyauthpassword"]
+            )
+        ) {
+            $_SESSION["un"] = $_POST["keyauthusername"];
+            echo "<meta http-equiv='Refresh' Content='2; url=dashboard/'>";
+            echo '
+                        <script type=\'text/javascript\'>
+                        
+                        const notyf = new Notyf();
+                        notyf
+                          .success({
+                            message: \'You have successfully logged in!\',
+                            duration: 3500,
+                            dismissible: true
+                          });                
+                        
+                        </script>
+                        ';
+        }
+    } ?>
   </body>
 </html>
