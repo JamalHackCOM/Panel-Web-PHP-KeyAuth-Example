@@ -60,7 +60,14 @@ if (isset($_POST['login']))
 <html>
   <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="/img/logo0020.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  </head>
   </head>
   <body>
     <div id="page">
@@ -111,7 +118,7 @@ if (isset($_POST['login']))
               <div></div>
             </div>
           </form>
-          <p class="hangarFormHelperText-root hangarFormHelperText-contained hangar-error hangarFormHelperText-filled" style="text-align:center;">All rights reserved to <a style="text-decoration:none;" href="https://mrgarabato.com/">MrGarabato</a> 2022 </p>
+          <p class="hangarFormHelperText-root hangarFormHelperText-contained hangar-error hangarFormHelperText-filled" style="text-align:center;">All rights reserved to <a style="text-decoration:none;" href="https://github.com/zetrocode/">ZetroCode</a> 2022 - <?php echo date('Y'); ?> </p>
         </div>
       </div>
     </div>
