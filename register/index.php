@@ -18,10 +18,7 @@ if (!isset($_SESSION['sessionid'])) {
 
 // Uncomment if you want to print the current session id for manual requests using postman
 // echo $_SESSION['sessionid'];
-?>
 
-<!-- Coloca aquí el código que te mostré antes: -->
-<?php
 if (isset($_POST['register'])) {
     if ($KeyAuthApp->register($_POST['username'], $_POST['password'], $_POST['license'])) {
         $_SESSION['un'] = $_POST['username'];
