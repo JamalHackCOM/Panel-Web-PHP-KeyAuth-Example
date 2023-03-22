@@ -1,47 +1,35 @@
 <?php
-require 'KeyAuth.php';
 
-// Redirect to dashboard if user is already logged in
-if (isset($_SESSION['user_data'])) {
-  header("Location: dashboard/");
-  exit();
+require '../KeyAuth.php';
+
+if (isset($_SESSION['user_data'])) 
+{
+	  header("Location: dashboard/");
+    exit();
 }
 
 $name = ""; // Application name
 $ownerid = ""; // Application ownerID
 $KeyAuthApp = new KeyAuth\api($name, $ownerid);
 
-// Initialize the session if it hasn't been initialized yet
-if (!isset($_SESSION['sessionid'])) {
-  $KeyAuthApp->init();
+if (!isset($_SESSION['sessionid'])) 
+{
+  	$KeyAuthApp->init();
 }
-
-// Uncomment if you want to print the current session id for manual requests using postman
-// echo $_SESSION['sessionid'];
-
-if (isset($_POST['register'])) {
-    if ($KeyAuthApp->register($_POST['username'], $_POST['password'], $_POST['license'])) {
-        $_SESSION['un'] = $_POST['username'];
-        echo "<meta http-equiv='Refresh' Content='2; url=../dashboard/'>";
-        echo '
-            <script type="text/javascript">
-                const notyf = new Notyf();
-                notyf.success({
-                    message: "You have successfully registered!",
-                    duration: 3500,
-                    dismissible: true
-                });
-            </script>
-        ';
-    }
-}
+//echo $_SESSION['sessionid']; //Will print current sessionid, that you can make request manually with like postman
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="shortcut icon" href="/img/logo0020.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   </head>
   <body>
     <div id="page">
@@ -108,10 +96,36 @@ if (isset($_POST['register'])) {
               <div></div>
             </div>
           </form>
-          <p class="hangarFormHelperText-root hangarFormHelperText-contained hangar-error hangarFormHelperText-filled" style="text-align:center;">All rights reserved to <a style="text-decoration:none;" href="https://mrgarabato.com/">MrGarabato</a> 2022 </p>
+          <p class="hangarFormHelperText-root hangarFormHelperText-contained hangar-error hangarFormHelperText-filled" style="text-align:center;">All rights reserved to <a style="text-decoration:none;" href="https://github.com/zetrocode/">ZetroCode</a> 2022 - <?php echo date('Y'); ?> </p>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    
+        <?php if (isset($_POST["register"])) {
+            if (
+                $KeyAuthApp->register(
+                    $_POST["username"],
+                    $_POST["password"],
+                    $_POST["license"]
+                )
+            ) {
+                $_SESSION["un"] = $_POST["username"];
+                echo "<meta http-equiv='Refresh' Content='2; url=../dashboard/'>";
+                echo '
+                        <script type=\'text/javascript\'>
+                        
+                        const notyf = new Notyf();
+                        notyf
+                          .success({
+                            message: \'You have successfully registered!\',
+                            duration: 3500,
+                            dismissible: true
+                          });                
+                        
+                        </script>
+                        ';
+            }
+        } ?>
   </body>
 </html>
