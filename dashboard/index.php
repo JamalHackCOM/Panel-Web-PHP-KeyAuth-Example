@@ -592,10 +592,10 @@ $token = $json->token;
 												<div class="fn-break-content">
 													<ul>
 														<li class="item item-0"><span class="item-categories"><a>IMPOARTANT</a></span>
-															<h3 class="item-title"><a href="./pages/download/"><span> CON EL PROGRAMA RESET IMEI BORRA TU EMULADOR PARA EVITAR BLACK LIST </span> <span class="text-success">(Click Aqui)</span><span> PARA DESCARGAR</span>
+															<h3 class="item-title"><a href="./pages/download/"><span> WITH THE RESET IMEI PROGRAM DELETE YOUR EMULATOR TO AVOID BLACKLIST </span> <span class="text-success">(Click here)</span><span> TO DOWNLOAD</span>
 	</a></h3></li>
 														<li class="item item-1"><span class="item-categories"><a>NEW UPDATE</a></span>
-															<h3 class="item-title"><a href="./pages/download/"><span> NUEVA VERSION DEL PANEL <?php echo $appVersion; ?> DISPONIBLE </span> <span class="text-success">(Click Aqui)</span><span> PARA DESCARGAR</span>
+															<h3 class="item-title"><a href="./pages/download/"><span> NEW VERSION OF THE PANEL <?php echo $appVersion; ?> AVAILABLE </span> <span class="text-success">(Click here)</span><span> TO DOWNLOAD</span>
 	</a></h3></li>
 													</ul>
 												</div>
