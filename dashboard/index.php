@@ -1,7 +1,7 @@
 <?php
 
-include '../credentials.php';
-require '../key.php';
+include '../Credentials.php';
+require '../Bypass.php';
 
 session_start();
 
@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_data'])) // if user not logged in
 if(isset($_POST['logout']))
 {
 	session_destroy();
-	header("Location: ../");
+	header("Location: /");
     exit();
 }
 
