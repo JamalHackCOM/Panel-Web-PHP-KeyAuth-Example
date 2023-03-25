@@ -405,22 +405,47 @@ $token = $json->token;
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <div class="preview-icon bg-dark rounded-circle"> <i
-                                                class="mdi mdi-logout text-danger"></i> </div>
+                                        <div class="preview-icon bg-dark rounded-circle">
+                                            <i class="mdi mdi-logout text-danger"></i>
+                                        </div>
                                     </div>
                                     <div class="preview-item-content">
                                         <form method="POST">
                                             <button class="btn btn-outline-custom me-0" style="padding-left: 0;"
-                                                name="logout">Log out</button>
+                                                name="logout" onclick="return confirmLogout()">Log out</button>
                                         </form>
                                     </div>
                                 </a>
+
+                                <script>
+                                function confirmLogout() {
+                                    return confirm("Do you want to log out?");
+                                }
+                                </script>
+                                <a class="dropdown-item preview-item" onclick="redirectToAccount()">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-dark rounded-circle"> <i
+                                                class="mdi mdi-account text-info"></i> </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <form method="POST" action="./pages/account/">
+                                            <button class="btn btn-outline-custom me-0" style="padding-left: 0;"
+                                                type="submit" name="button-id">Modify Account</button>
+                                        </form>
+                                    </div>
+                                </a>
+
+                                <script>
+                                function redirectToAccount() {
+                                    window.location.href = "./pages/account/";
+                                }
+                                </script>
                         </li>
                     </ul>
                     <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                         data-toggle="offcanvas"> <span class="mdi mdi-format-line-spacing"></span> </button>
                 </div>
-                <!-- <?php include_once('../assets/welcome-popup.php'); ?> -->
+                <?php include_once('../assets/welcome-popup.php'); ?>
             </nav>
 
             <!-- partial -->
@@ -1343,7 +1368,7 @@ $token = $json->token;
                     var xmlHttp = new XMLHttpRequest();
                     xmlHttp.open("GET",
                         "http://localhost:1337/handshake?user=<?php echo $_SESSION['un']; ?>&token=<?php echo $token; ?>"
-                        );
+                    );
                     xmlHttp.onload = function() {
                         going = 0;
                         switch (xmlHttp.status) {
