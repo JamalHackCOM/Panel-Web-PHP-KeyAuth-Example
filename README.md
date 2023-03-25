@@ -1,12 +1,12 @@
 [Site KeyAuth](https://keyauth.cc/)
 
 ## Steps
-- 1. Add your credentials: name, ownerID, Application Version, seller key.
-In the following path: 
+- Add your credentials: name, ownerID, Application Version, seller key.
+### In the following path: 
     /auth/Credentials.php
 
-- 2. Add: name, ownerID. 
-In the following paths:
+- Add: name, ownerID. 
+### In the following paths:
     /index.php
     /register/index.php    
 
