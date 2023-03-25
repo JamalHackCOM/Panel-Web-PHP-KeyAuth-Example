@@ -754,9 +754,7 @@ $token = $json->token;
                                                         <?php echo $subscription; ?>
                                                     </td>
                                                     <td>
-                                                        <script>
-                                                        document.write(convertTimestamp(<?php echo $createdate; ?>));
-                                                        </script>
+                                                        <?php echo date('d/m/Y H:i:s', $createdate); ?>
                                                     </td>
                                                     <td> PayPal </td>
                                                     <td>
