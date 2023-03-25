@@ -1,10 +1,14 @@
 [Site KeyAuth](https://keyauth.cc/)
 
-## Images
+## Steps
+- 1. Add your credentials: name, ownerID, Application Version, seller key.
+In the following path: 
+    /auth/Credentials.php
 
-![Login screen](https://cdn.discordapp.com/attachments/963208064041906226/1089024512059781201/Captura_de_pantalla_65.png)
-![Loaded dashboard popup](https://cdn.discordapp.com/attachments/963208064041906226/1089024693354385408/Captura_de_pantalla_67.png)
-![Loaded dashboard](https://cdn.discordapp.com/attachments/963208064041906226/1089024693694111774/Captura_de_pantalla_68.png)
+- 2. Add: name, ownerID. 
+In the following paths:
+    /index.php
+    /register/index.php    
 
 ## New Version
 - 2.0 - (24/03/2023)
@@ -52,3 +56,9 @@ of the licensor in the software. Any use of the licensor’s trademarks is subje
 to applicable law.
 
 Thank you for your compliance, we work hard on the development of KeyAuth and do not appreciate our copyright being infringed.
+
+## Images
+
+![Login screen](https://cdn.discordapp.com/attachments/963208064041906226/1089024512059781201/Captura_de_pantalla_65.png)
+![Loaded dashboard popup](https://cdn.discordapp.com/attachments/963208064041906226/1089024693354385408/Captura_de_pantalla_67.png)
+![Loaded dashboard](https://cdn.discordapp.com/attachments/963208064041906226/1089024693694111774/Captura_de_pantalla_68.png)
