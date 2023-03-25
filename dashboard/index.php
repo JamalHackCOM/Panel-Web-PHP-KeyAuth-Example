@@ -420,7 +420,7 @@ $token = $json->token;
                     <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                         data-toggle="offcanvas"> <span class="mdi mdi-format-line-spacing"></span> </button>
                 </div>
-                <?php include_once('../assets/welcome-popup.php'); ?>
+                <!-- <?php include_once('../assets/welcome-popup.php'); ?> -->
             </nav>
 
             <!-- partial -->
