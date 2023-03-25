@@ -1,3 +1,6 @@
+## New Version
+- 2.0
+
 [Site KeyAuth](https://keyauth.cc/)
 
 ## Images
