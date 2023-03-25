@@ -37,7 +37,7 @@ if (!isset($_SESSION['sessionid']))
     <div id="page">
         <div class="hangar-auth">
             <div class="hangar-form">
-                <img draggable="false" src="../img/logo0021.png" alt="Login" class="hangar-logo">
+                <img draggable="false" src="../assets/img/logo0021.png" alt="Login" class="hangar-logo">
                 <h1 class="hangar-auth_title">
                     <i class="fad fa-user-plus"></i>
                     <span>Register</span>
